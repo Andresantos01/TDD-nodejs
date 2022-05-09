@@ -1,0 +1,33 @@
+{
+  "name": "ingress-ascade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__",
+    "pretest": "SET NODE_ENV=test &  sequelize db:migrate",
+    "test": "SET NODE_ENV=test &  jest",
+    "posttest": "SET NODE_ENV=test &  sequelize db:migrate:undo:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "factory-girl": "^5.0.4",
+    "faker": "^5.5.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "sequelize-cli": "^6.4.1",
+    "sqlite3": "^5.0.8",
+    "supertest": "^6.2.3"
+  }
+}
