@@ -6,7 +6,7 @@ This project is a contruction of login system using JWT with TDD
 ## Installation
 
 
-download or clone this project and then install:
+download or clone this project and then install all dependencies:
 ```bash
   cd TDD-nodejs
   npm install 
